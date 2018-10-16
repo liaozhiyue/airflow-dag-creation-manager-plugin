@@ -128,7 +128,7 @@ def %(task_name)s_worker(ds, **context):
         "before_code": "",
         "operator_name": "NamedHivePartitionSensor",
         "operator_code": r"""
-    partition_names=%(processed_command)s,
+    partition_names=r'''%(processed_command)s''',
 """, }
 
     TIMEDELTA_SENSOR_TASK_CODE_TEMPLATE = BASE_TASK_CODE_TEMPLATE % {
