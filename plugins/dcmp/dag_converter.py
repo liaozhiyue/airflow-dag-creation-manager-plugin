@@ -155,7 +155,7 @@ _["%(task_name)s"] << _["%(upstream_name)s"]
         "python": PYTHON_TASK_CODE_TEMPLATE,
         "short_circuit": SHORT_CIRCUIT_TASK_CODE_TEMPLATE,
         "partition_sensor":  HIVE_PARTITION_SENSOR_TASK_CODE_TEMPLATE,
-        "external_task__sensor":  EXTERNAL_TASK_SENSOR_TASK_CODE_TEMPLATE,
+        "external_task_sensor":  EXTERNAL_TASK_SENSOR_TASK_CODE_TEMPLATE,
         "time_sensor": TIME_SENSOR_TASK_CODE_TEMPLATE,
         "timedelta_sensor": TIMEDELTA_SENSOR_TASK_CODE_TEMPLATE,
     }
