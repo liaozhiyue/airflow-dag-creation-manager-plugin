@@ -126,8 +126,8 @@ def %(task_name)s_worker(ds, **context):
         "before_code": "",
         "operator_name": "ExternalTaskSensor",
         "operator_code": r"""
-        external_dag_id=%(processed_command)s.split("/")[0],
-        external_task_id=%(processed_command)s.split("/")[1],
+        external_dag_id='''%(processed_command)s'''.split("/")[0],
+        external_task_id='''%(processed_command)s'''.split("/")[1],
 """, }
 
     TIME_SENSOR_TASK_CODE_TEMPLATE = BASE_TASK_CODE_TEMPLATE % {
