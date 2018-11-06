@@ -14,9 +14,12 @@ from airflow.operators.bash_operator import BashOperator
 from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.hive_operator import HiveOperator
 from airflow.operators.python_operator import PythonOperator, ShortCircuitOperator
-from airflow.operators.sensors import TimeSensor, TimeDeltaSensor, NamedHivePartitionSensor, ExternalTaskSensor
+from airflow.operators.sensors import TimeSensor, TimeDeltaSensor, NamedHivePartitionSensor, Externa
 from airflow.utils.email import send_email
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 TI = TaskInstance
 
